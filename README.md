@@ -1,73 +1,94 @@
-# React + TypeScript + Vite
+# 💸 Refund
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação **front-end** desenvolvida em **React + TypeScript** para uma **Solicitação de Reembolso**.  
+O projeto simula um cenário real de negócio, permitindo que usuários registrem, visualizem e gerenciem solicitações de reembolso de forma simples e organizada.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Preview
 
-## React Compiler
+![Preview da aplicação](./images/heroimage.jpg)
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+---
 
-## Expanding the ESLint configuration
+## 🚀 Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🧾 Criação de solicitações de reembolso
+- ✏️ Edição de solicitações
+- 🗑️ Remoção de solicitações
+- 📋 Listagem de reembolsos cadastrados
+- 📊 Visualização de valores solicitados
+- 🧑 Organização por usuário/colaborador
+- 🕒 Controle de status da solicitação (pendente, aprovado, recusado)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🧠 Conceitos aplicados
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Componentização com React
+- Gerenciamento de estado
+- Tipagem forte com TypeScript
+- Manipulação de formulários
+- Renderização condicional
+- Reutilização de componentes
+- Boas práticas de UI/UX
+- Organização de projeto front-end
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+- React
+- TypeScript
+- Tailwind CSS
+- Vite
+- ESLint
+- Git & GitHub
+
+---
+
+## 📂 Estrutura do projeto
+
+```bash
+src/
+ ├─ components/
+ ├─ pages/
+ ├─ styles/
+ ├─ types/
+ ├─ services/
+ ├─ App.tsx
+ └─ main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Como executar o projeto
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Pré-requisitos
+
+- Node.js (LTS)
+- npm ou yarn
+
+### Passo a passo
+
+```bash
+git clone https://github.com/williamdelimacx/refund.git
+cd refund
+npm install
+npm run dev
 ```
+
+A aplicação estará disponível em:  
+👉 http://localhost:5173
+
+---
+
+## 🎯 Objetivo do projeto
+
+Projeto desenvolvido para **praticar React com TypeScript**, simulando o **front-end de um sistema de solicitação de reembolso**, além de servir como **projeto de portfólio**.
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
